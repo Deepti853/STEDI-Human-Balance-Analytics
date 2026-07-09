@@ -1,4 +1,7 @@
 CREATE EXTERNAL TABLE `step_trainer_landing`(
+  sensorReadingTime BIGINT,
+  serialNumber STRING,
+  distanceFromObject INT
 )
 ROW FORMAT SERDE 
   'org.openx.data.jsonserde.JsonSerDe' 
