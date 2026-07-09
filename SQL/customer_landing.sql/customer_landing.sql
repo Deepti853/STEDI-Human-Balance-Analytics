@@ -1,4 +1,14 @@
 CREATE EXTERNAL TABLE `customer_landing`(
+  serialNumber STRING,
+  shareWithPublicAsOfDate BIGINT,
+  birthday STRING,
+  registrationDate BIGINT,
+  shareWithResearchAsOfDate BIGINT,
+  customerName STRING,
+  email STRING,
+  lastUpdateDate BIGINT,
+  phone STRING,
+  shareWithFriendsAsOfDate BIGINT
 )
 ROW FORMAT SERDE 
   'org.openx.data.jsonserde.JsonSerDe' 
